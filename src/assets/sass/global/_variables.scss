@@ -1,0 +1,38 @@
+//　色
+$main-color: #eef9f8;
+$accent-color: #64629D;
+$text-color: #2D2D32;
+$text-color-sub: #fff;
+$background-base: #fff;
+$accent-color-gray: #D9D9D9;
+
+//　フォント
+$ff-base: "Noto Sans JP", serif;
+$ff-en: "Jost", serif;
+$fz-base: 16px;
+$fw-base: 400;
+
+//　レイアウト
+
+$inner-width: 1240px;
+$sp-width: 768px;
+
+//　ブレークポイント
+$breakpoints: (
+  "xs": "screen and (max-width: 374px)",
+  "sp": "screen and (max-width: #{$sp-width})",
+  "tab": "screen and (min-width: 764px) and (max-width: 1024px)",
+  "pc": "screen and (min-width: 1025px)",
+);
+
+// 重なり順の定義
+$layer: (
+  loading: 300,
+  modal: 100,
+  drawer: 40,
+  floating: 30,
+  header: 20,
+  footer: 10,
+  content: 5,
+  default: 1,
+  )

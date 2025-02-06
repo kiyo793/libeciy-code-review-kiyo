@@ -1,0 +1,35 @@
+@use "../global" as global;
+
+// ---
+// 非表示
+// ---
+
+.u-hidden-xs {
+	@media screen and (max-width: 374px) {
+		display: none;
+	}
+}
+
+.u-hidden-pc {
+	// PC時に非表示
+
+	@include global.mq("pc") {
+		display: none;
+	}
+}
+
+.u-hidden-tab {
+	// タブレット時に非表示
+
+	@include global.mq("tab") {
+		display: none;
+	}
+}
+
+.u-hidden-sp {
+	// スマホ時に非表示
+
+	@include global.mq("sp") {
+		display: none;
+	}
+}
