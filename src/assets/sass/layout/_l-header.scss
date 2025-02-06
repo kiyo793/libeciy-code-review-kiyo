@@ -1,0 +1,36 @@
+@use "../global" as global;
+
+.l-header{
+
+}
+.l-header__inner{
+    margin-block-end: 10px;
+    display: flex;
+    justify-content: space-between;
+    @include global.mq('pc') {
+        padding-block: 11px;
+    }
+}
+.l-header__nav{
+    display:none;
+    @include global.mq('tab') {
+       display: flex;
+    }
+    @include global.mq('pc') {
+        display: flex;
+    }
+}
+.l-header__button{
+    @include global.mq('tab') {
+        display: none;
+    }
+    @include global.mq('pc') {
+        display: none;
+    }
+}
+
+.l-header__logo{
+    padding: 10px;
+    block-size: 98px;
+    inline-size: 96px;
+}

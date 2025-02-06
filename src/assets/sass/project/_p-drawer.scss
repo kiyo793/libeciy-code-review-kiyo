@@ -1,0 +1,33 @@
+@use "../global" as global;
+@use "sass:map";
+.p-drawer {
+    background-color: global.$background-base;
+    width: 100%;
+    text-align: center;
+    padding-block-start: 5px;
+    padding-block-end: 29px;
+    z-index: map.get(global.$layer,"drawer");
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+  @include global.mq("tab") {
+    display: none;
+  }
+  @include global.mq("pc") {
+    display: none;
+  }
+}
+
+.p-drawer__link {
+    font-size: 30px;
+}
+
+// animation
+.p-drawer{
+    transform: translateX(100%);
+    transition: all 0.3s linear;
+    &.is-open{
+      transform: translateX(0);
+    }
+}

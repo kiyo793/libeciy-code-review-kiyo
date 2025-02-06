@@ -1,0 +1,15 @@
+@use "../global" as global;
+
+.l-inner{
+    max-inline-size: 400px;
+    margin-inline: auto;
+
+    @include global.mq('tab') {
+        max-inline-size: calc(600px + 40px * 2);
+        padding-inline: 40px;
+    }
+    @include global.mq('pc') {
+        max-inline-size: calc(985px + 40px * 2);
+        padding-inline: 40px;
+    }
+}

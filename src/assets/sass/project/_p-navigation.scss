@@ -1,0 +1,12 @@
+@use "../global" as global;
+
+.p-navigation{
+    align-items: center;
+    gap: 40px;
+}
+.p-navigation__link{
+    font-size: 20px;
+    @include global.mq('pc') {
+        font-size: 30px;
+    }
+}
