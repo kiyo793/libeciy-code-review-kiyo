@@ -7,14 +7,37 @@
 	<meta name="robots" content="no-index" />
 	<title>丸山工務店</title>
 	<meta name="description" content="" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="./assets/css/style.min.css" />
 </head>
 
 <body>
+	<header class="l-header">
+		<div class="l-header__inner l-inner">
+			<div class="l-header__logo">
+				<img src="./assets/img/logo.png" alt="丸山工務店ロゴ" />
+			</div>
+			<nav class="l-header__nav p-navigation">
+				<a href="#" class="p-navigation__link">ホーム</a>
+				<a href="#" class="p-navigation__link">施工事例</a>
+				<a href="#" class="p-navigation__link">お問い合わせ</a>
+			</nav>
 
+			<button id="js-drawer-icon" class="l-header__button c-drawer-icon">
+				<span class="c-drawer-icon__bar"></span>
+				<span class="c-drawer-icon__bar"></span>
+				<span class="c-drawer-icon__bar"></span>
+			</button>
+		</div>
+	</header>
+
+	<div id="js-drawer-content" class="p-drawer">
+		<a href="#" class="p-drawer__link">会社概要</a>
+		<a href="#" class="p-drawer__link">施工事例</a>
+		<a href="#" class="p-drawer__link">お問い合わせ</a>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 	<script src="./assets/js/main.min.js"></script>
