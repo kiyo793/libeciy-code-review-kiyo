@@ -1,0 +1,54 @@
+@use "../global" as global;
+
+.c-service-media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @include global.mq('tab') {
+        gap: 5px;
+    }
+    @include global.mq('pc') {
+        gap: 5px;
+    }
+}
+
+.c-service-media__title {
+font-size: 20px;
+@include global.mq('pc') {
+    font-size: 30px;
+}
+}
+
+.c-service-media__content{
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    @include global.mq('tab') {
+        flex-direction: column;
+    }
+    @include global.mq('pc') {
+        flex-direction: column;
+    }
+}
+
+.c-service-media__img {
+inline-size: 110.837px;
+flex-shrink: 0;
+@include global.mq('tab') {
+    inline-size: 193.3333px;
+}
+@include global.mq('pc') {
+    inline-size: 326.333px;
+}
+}
+
+.c-service-media__text {
+@include global.mq('pc') {
+    font-size: 20px;
+}
+}
+
+*{
+    outline: 1px solid #333;
+}
+

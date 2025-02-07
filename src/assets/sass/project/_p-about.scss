@@ -2,18 +2,11 @@
 
 .p-about {
     padding-block-start: 15px;
+    padding-block-end: 10px;
     @include global.mq('pc') {
         padding-block-start: 12px;
+        padding-block-end: 30px;
     }
-}
-
-.p-about__inner {
-
-}
-
-
-.p-about__title {
-
 }
 
 

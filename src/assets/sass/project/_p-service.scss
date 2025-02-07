@@ -1,0 +1,30 @@
+@use "../global" as global;
+
+.p-service {
+    padding-block-start: 10px;
+    padding-block-end: 20px;
+    @include global.mq('pc') {
+        padding-block-end: 30px;
+    }
+    @include global.mq('pc') {
+        padding-block-end: 30px;
+    }
+}
+
+
+.p-service__body {
+    margin-block-start: 10px;
+    margin-block-end: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @include global.mq('tab') {
+        margin-block-start: 20px;
+        flex-direction: row;
+    }
+    @include global.mq('pc') {
+        margin-block-start: 20px;
+        flex-direction: row;
+    }
+}
+
