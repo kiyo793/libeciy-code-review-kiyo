@@ -15,7 +15,7 @@
 
 <body>
 	<header class="l-header">
-		<div class="l-header__inner l-inner">
+		<div class="l-header__inner">
 			<div class="l-header__logo">
 				<img src="./assets/img/logo.png" alt="丸山工務店ロゴ" />
 			</div>
@@ -39,16 +39,45 @@
 		<a href="#" class="p-drawer__link">お問い合わせ</a>
 	</div>
 
-	<section class="p-mv">
-		<div class="p-mv__inner">
-			<div class="p-mv__content">
-				<h2 class="p-mv__title">安全安心な家づくり</h2>
-				<p class="p-mv__text">
-					長く住む家だからこそ、<br>安全と快適を追求。<br>理想の住まいをつくります。
-				</p>
+	<main class="l-main">
+		<section class="p-mv">
+			<div class="p-mv__inner">
+				<div class="p-mv__content">
+					<h2 class="p-mv__title">安全安心な家づくり</h2>
+					<p class="p-mv__text">
+						長く住む家だからこそ、<br />安全と快適を追求。<br />理想の住まいをつくります。
+					</p>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+
+		<section class="p-about">
+			<div class="p-about__inner l-inner">
+				<h2 class="p-about__title c-title">当社について</h2>
+				<div class="p-about__body">
+					<div class="p-about__img">
+						<picture>
+							<source media="(min-width: 1025px)" srcset="./assets/img/about.jpg" />
+							<source media="(min-width: 764px) and (max-width: 1024px)" srcset="./assets/img/tab/about-tab.jpg" />
+							<img src="./assets/img/sp/about-sp.jpg" alt="丸山庄造社長" />
+						</picture>
+					</div>
+					<div class="p-about__container">
+						<p class="p-about__text">
+							丸山工務店は、丸山庄造社長のもと、二級建築大工技能士、二級建築士の資格を有する建築のプロフェッショナル集団です。埼玉県草加市、川口市、越谷市、春日部市、松伏町、吉川市を中心に、新築戸建、住宅リフォーム、店舗改装など、幅広いサービスを提供しています。私たちは施主様との緊密なコミュニケーションを大切にし、お客様のイメージや要望を丁寧に聞き取り、実現に向けて努力しています。お客様とともにより良い住まいづくりを目指し、高品質な工事を心がけています。
+						</p>
+						<div class="p-about__button c-button u-hidden-sp">
+							<a href="" class="c-button__link">会社概要</a>
+						</div>
+					</div>
+				</div>
+				<div class="p-about__button c-button u-hidden-tab u-hidden-pc">
+					<a href="" class="c-button__link">会社概要</a>
+				</div>
+			</div>
+		</section>
+
+	</main>
 
 	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 	<script src="./assets/js/main.min.js"></script>

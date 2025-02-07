@@ -1,0 +1,8 @@
+@use "../global" as global;
+
+.c-title{
+    font-size: 30px;
+    @include global.mq('pc') {
+        font-size: 50px;
+    }
+}

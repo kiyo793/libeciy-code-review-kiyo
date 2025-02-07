@@ -1,7 +1,8 @@
 @use "../global" as global;
 
 .l-inner{
-    max-inline-size: 400px;
+    max-inline-size: calc(500px + 35px * 2);
+    padding-inline: 35px;
     margin-inline: auto;
 
     @include global.mq('tab') {
@@ -9,7 +10,7 @@
         padding-inline: 40px;
     }
     @include global.mq('pc') {
-        max-inline-size: calc(985px + 40px * 2);
+        max-inline-size: calc(1000px + 40px * 2);
         padding-inline: 40px;
     }
 }

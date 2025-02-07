@@ -1,0 +1,66 @@
+@use "../global" as global;
+
+.p-about {
+    padding-block-start: 15px;
+    @include global.mq('pc') {
+        padding-block-start: 12px;
+    }
+}
+
+.p-about__inner {
+
+}
+
+
+.p-about__title {
+
+}
+
+
+.p-about__body {
+    margin-block-start: 17px;
+    display: flex;
+    gap: 10px;
+    @include global.mq('pc') {
+        gap: 40px;
+    }
+}
+
+.p-about__img {
+    inline-size: 150px;
+    flex-shrink: 0;
+    @include global.mq('tab') {
+        inline-size: 295px;
+    }
+    @include global.mq('pc') {
+        inline-size: 480px;
+    }
+}
+
+.p-about__container {
+@include global.mq('pc') {
+    padding-inline: 15px;
+}
+}
+
+.p-about__text {
+    line-height: 1.16;
+    @include global.mq('tab') {
+        line-height: 1.195;
+    }
+    @include global.mq('pc') {
+        font-size:20px;
+        line-height: 1.193;
+    }
+}
+
+.p-about__button {
+    margin-block-start: 47px;
+    @include global.mq('tab') {
+        margin-block-start: 63.5px;
+    }
+    @include global.mq('pc') {
+        margin-block-start: 64px;
+    }
+}
+
