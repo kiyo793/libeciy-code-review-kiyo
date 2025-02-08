@@ -448,10 +448,6 @@ body.is-fixed {
 	width: 100%;
 }
 
-* {
-	outline: 1px solid #333;
-}
-
 @media screen and (min-width: 764px) and (max-width: 1024px) {
 
 .l-header__inner {
