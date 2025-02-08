@@ -1,6 +1,7 @@
 @use "../global" as global;
 
 .c-testimonials-media {
+  flex: 1;
 }
 
 .c-testimonials-media__img {
@@ -10,7 +11,7 @@
     inline-size: 290px;
   }
   @include global.mq("pc") {
-    inline-size: 480px;
+    inline-size: auto;
   }
 }
 

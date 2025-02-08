@@ -18,3 +18,32 @@ drawerLinks.forEach(function (link) {
     html.classList.remove("is-fixed");
   });
 });
+
+function viewportSet() {
+    const wsw = window.screen.width;
+    if (wsw <= 450) {
+      // デバイス横幅460以下
+      document.querySelector("meta[name='viewport']").setAttribute("content", "width=450px,initial-scale=1.0");
+    } else {
+      // それ以外
+      document.querySelector("meta[name='viewport']").setAttribute("content" , "width=device-width, initial-scale=1");
+    }
+  }
+  window.addEventListener("DOMContentLoaded", viewportSet, false);
+  window.addEventListener("resize", viewportSet, false);
+  window.addEventListener("orientationchange", viewportSet, false);
+
+
+  jQuery("#pageTop").on("click", function (e) {
+    e.preventDefault();
+    const speed = 700;
+    const target = jQuery("html");
+    const position = target.offset().top;
+    jQuery("html, body").animate(
+      {
+        scrollTop: position,
+      },
+      speed,
+      "swing"
+    );
+});
