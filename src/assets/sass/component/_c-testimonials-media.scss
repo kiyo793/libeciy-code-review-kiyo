@@ -1,0 +1,76 @@
+@use "../global" as global;
+
+.c-testimonials-media {
+}
+
+.c-testimonials-media__img {
+  inline-size: 180px;
+  margin-inline: auto;
+  @include global.mq("tab") {
+    inline-size: 290px;
+  }
+  @include global.mq("pc") {
+    inline-size: 480px;
+  }
+}
+
+.c-testimonials-media__content {
+  margin-block-start: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  @include global.mq("tab") {
+    flex-direction: row-reverse;
+    gap: 20px;
+  }
+  @include global.mq("pc") {
+    margin-block-start: 4px;
+    flex-direction: row-reverse;
+    gap: 80px;
+    block-size: 175px;
+  }
+}
+
+.c-testimonials-media__customer {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+  @include global.mq("tab") {
+    flex-direction: column;
+    gap: 3px;
+    align-items: flex-start;
+  }
+  @include global.mq("pc") {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+}
+
+.c-testimonials-media__customer-img {
+  inline-size: 60px;
+  @include global.mq("pc") {
+    inline-size: 100px;
+  }
+}
+
+.c-testimonials-media__customer-name {
+    @include global.mq('tab') {
+        line-height: 1.2;
+    }
+  @include global.mq("pc") {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.c-testimonials-media__text {
+    line-height: 1.22;
+    @include global.mq('tab') {
+        line-height: 1.2;
+    }
+  @include global.mq("pc") {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}

@@ -1,0 +1,35 @@
+@use "../global" as global;
+
+.p-testimonials {
+    padding-block-start: 13px;
+    padding-block-end: 20px;
+    @include global.mq('tab') {
+        padding-block-start: 14px;
+    }
+    @include global.mq('pc') {
+        padding-block-start: 12px;
+    }
+}
+
+
+
+.p-testimonials__body {
+    padding-block-start: 7px;
+    display: flex;
+    gap: 20px;
+    @include global.mq('pc') {
+        gap: 40px;
+    }
+}
+
+.p-testimonials__button{
+    margin-block-start: 10px;
+    @include global.mq('tab') {
+        margin-block-start: 30px;
+    }
+    @include global.mq('pc') {
+        margin-block-start: 40px;
+    }
+}
+
+規則

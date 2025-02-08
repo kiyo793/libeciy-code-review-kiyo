@@ -1,0 +1,65 @@
+@use "../global" as global;
+
+.l-footer__inner{
+    margin-block-end: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-inline-size: 400px;
+    margin-inline: auto;
+
+    @include global.mq('tab') {
+        max-inline-size: calc(600px + 40px * 2);
+        padding-inline: 40px;
+        margin-block-end: 11.5px;
+    }
+    @include global.mq('pc') {
+        max-inline-size: calc(985px + 40px * 2);
+        padding-inline: 40px;
+        padding-block: 11px;
+    }
+}
+.l-footer__menu{
+    display:none;
+    @include global.mq('tab') {
+       display: flex;
+    }
+    @include global.mq('pc') {
+        display: flex;
+    }
+}
+.l-footer__button{
+    @include global.mq('tab') {
+        display: none;
+    }
+    @include global.mq('pc') {
+        display: none;
+    }
+}
+
+.l-footer__logo{
+    padding: 10px;
+    block-size: 98px;
+    inline-size: 96px;
+}
+
+.l-footer__page-up{
+    inline-size: 94px;
+    block-size: 100px;
+    position: relative;
+    @include global.mq('tab') {
+        display: none;
+    }
+    @include global.mq('pc') {
+        display: none;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        inset-block: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        inline-size: 50px;
+        block-size: 50px;
+        background: url(../img/page-up.png) no-repeat center center / contain;
+        }
+}

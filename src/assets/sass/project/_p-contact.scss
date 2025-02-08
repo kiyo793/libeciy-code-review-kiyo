@@ -1,0 +1,90 @@
+@use "../global" as global;
+
+.p-contact {
+    padding-block-start: 5px;
+    padding-block-end: 30px;
+    @include global.mq('pc') {
+        padding-block-start: 2px;
+        padding-block-end: 19px;
+    }
+}
+
+.p-contact__inner {
+
+}
+
+
+.p-contact__title {
+
+}
+
+
+.p-contact__body {
+    margin-block-start: 7px;
+    display: flex;
+    gap: 10px;
+}
+
+.p-contact__office {
+
+}
+
+.p-contact__office-img {
+    inline-size: 120px;
+    flex-shrink: 0;
+    @include global.mq('tab') {
+        inline-size: 260px;
+    }
+    @include global.mq('pc') {
+        inline-size: 460px;
+    }
+}
+
+.p-contact__office-text {
+    margin-block-start: 10px;
+    font-size: 12px;
+    @include global.mq('tab') {
+        margin-block-start: 15px;
+        font-size: 15px;
+        line-height: 1.27;
+    }
+    @include global.mq('pc') {
+        margin-block-start: 18px;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+}
+
+.p-contact__info {
+margin-inline-start: 18px;
+@include global.mq('tab') {
+    margin-inline-start: 29px;
+}
+@include global.mq('pc') {
+    margin-inline-start: 127px;
+}
+}
+
+.p-contact__address {
+font-size: 20px;
+line-height: 1.33;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 18px;
+@include global.mq('pc') {
+    font-size: 30px;
+    gap: 29px;
+}
+}
+
+.p-contact__button {
+    margin-block-start: 10px;
+    @include global.mq('tab') {
+        margin-block-start: 36px;
+    }
+    @include global.mq('pc') {
+        margin-block-start: 32px;
+    }
+}
+
